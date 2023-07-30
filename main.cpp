@@ -1,15 +1,17 @@
 #include<iostream>
+#include<gtest/gtest.h>
 
 int sum(int a, int b)
 {
 	return a + b;
 }
 
-int main()
-{
-	std::cout << "Hello World" << std::endl;
-	std::cout << "Sum: " << sum(10, 12) << std::endl;
-	return 0;
+TEST(SumTest, Positive) 
+{ 
+    ASSERT_EQ(6, sum(4, 2));
+}
 
-	
+TEST(SumTest, Nagative) 
+{ 
+    ASSERT_NE(6, sum(5, 2));
 }
