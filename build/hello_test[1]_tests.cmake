@@ -1,5 +1,0 @@
-add_test( SumTest.Positive /home/cavoid/workspace/devops/build/hello_test [==[--gtest_filter=SumTest.Positive]==] --gtest_also_run_disabled_tests)
-set_tests_properties( SumTest.Positive PROPERTIES WORKING_DIRECTORY /home/cavoid/workspace/devops/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-add_test( SumTest.Nagative /home/cavoid/workspace/devops/build/hello_test [==[--gtest_filter=SumTest.Nagative]==] --gtest_also_run_disabled_tests)
-set_tests_properties( SumTest.Nagative PROPERTIES WORKING_DIRECTORY /home/cavoid/workspace/devops/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-set( hello_test_TESTS SumTest.Positive SumTest.Nagative)

@@ -1,3 +1,0 @@
-SumTest.Positive 1 0.00396604
-SumTest.Nagative 1 0.00377862
----
